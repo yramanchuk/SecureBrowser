@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB7DFA991D2E47A500D09DE6 /* libVeraCryptoLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7DFA981D2E47A500D09DE6 /* libVeraCryptoLib.a */; };
+		CB6CE6751D3074BC00FE1AD2 /* CryptoLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB6CE6731D3074BC00FE1AD2 /* CryptoLib.cpp */; };
+		CB6CE6761D3074BC00FE1AD2 /* CryptoLib.h in Headers */ = {isa = PBXBuildFile; fileRef = CB6CE6741D3074BC00FE1AD2 /* CryptoLib.h */; };
+		CB6CE67A1D30754C00FE1AD2 /* libSecureLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6CE6681D30748200FE1AD2 /* libSecureLibrary.a */; };
 		CB7DFAAB1D2F622500D09DE6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7DFAA41D2F622500D09DE6 /* DetailViewController.m */; };
 		CB7DFAAC1D2F622500D09DE6 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7DFAA61D2F622500D09DE6 /* MasterViewController.m */; };
 		CB7DFAAD1D2F622500D09DE6 /* CryptoLibAdaptor.mm in Sources */ = {isa = PBXBuildFile; fileRef = CB7DFAAA1D2F622500D09DE6 /* CryptoLibAdaptor.mm */; };
@@ -26,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CB6CE67B1D30755D00FE1AD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9A1C381D2E375E00D22C3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB6CE6671D30748200FE1AD2;
+			remoteInfo = SecureLibrary;
+		};
 		CB9A1C5D1D2E375F00D22C3F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB9A1C381D2E375E00D22C3F /* Project object */;
@@ -43,8 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CB7DFA981D2E47A500D09DE6 /* libVeraCryptoLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVeraCryptoLib.a; sourceTree = "<group>"; };
-		CB7DFA9F1D2E495300D09DE6 /* CryptoLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoLib.h; sourceTree = "<group>"; };
+		CB6CE6681D30748200FE1AD2 /* libSecureLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSecureLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6CE6731D3074BC00FE1AD2 /* CryptoLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CryptoLib.cpp; sourceTree = "<group>"; };
+		CB6CE6741D3074BC00FE1AD2 /* CryptoLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoLib.h; sourceTree = "<group>"; };
 		CB7DFAA31D2F622500D09DE6 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		CB7DFAA41D2F622500D09DE6 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		CB7DFAA51D2F622500D09DE6 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
@@ -77,11 +87,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CB6CE6651D30748200FE1AD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB9A1C3D1D2E375E00D22C3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB7DFA991D2E47A500D09DE6 /* libVeraCryptoLib.a in Frameworks */,
+				CB6CE67A1D30754C00FE1AD2 /* libSecureLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB6CE6691D30748200FE1AD2 /* SecureLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				CB6CE6731D3074BC00FE1AD2 /* CryptoLib.cpp */,
+				CB6CE6741D3074BC00FE1AD2 /* CryptoLib.h */,
+			);
+			path = SecureLibrary;
+			sourceTree = "<group>";
+		};
 		CB7DFAA21D2F622500D09DE6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +168,7 @@
 				CB9A1C421D2E375E00D22C3F /* SecureBrowser */,
 				CB9A1C5F1D2E375F00D22C3F /* SecureBrowserTests */,
 				CB9A1C6A1D2E375F00D22C3F /* SecureBrowserUITests */,
+				CB6CE6691D30748200FE1AD2 /* SecureLibrary */,
 				CB9A1C411D2E375E00D22C3F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -152,6 +179,7 @@
 				CB9A1C401D2E375E00D22C3F /* SecureBrowser.app */,
 				CB9A1C5C1D2E375F00D22C3F /* SecureBrowserTests.xctest */,
 				CB9A1C671D2E375F00D22C3F /* SecureBrowserUITests.xctest */,
+				CB6CE6681D30748200FE1AD2 /* libSecureLibrary.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,8 +232,6 @@
 		CB9A1C7B1D2E37C500D22C3F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CB7DFA9F1D2E495300D09DE6 /* CryptoLib.h */,
-				CB7DFA981D2E47A500D09DE6 /* libVeraCryptoLib.a */,
 				CB9A1C7C1D2E37F700D22C3F /* images */,
 			);
 			path = Resources;
@@ -213,7 +239,35 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		CB6CE6661D30748200FE1AD2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6CE6761D3074BC00FE1AD2 /* CryptoLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		CB6CE6671D30748200FE1AD2 /* SecureLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB6CE6721D30748200FE1AD2 /* Build configuration list for PBXNativeTarget "SecureLibrary" */;
+			buildPhases = (
+				CB6CE6641D30748200FE1AD2 /* Sources */,
+				CB6CE6651D30748200FE1AD2 /* Frameworks */,
+				CB6CE6661D30748200FE1AD2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecureLibrary;
+			productName = SecureLibrary;
+			productReference = CB6CE6681D30748200FE1AD2 /* libSecureLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		CB9A1C3F1D2E375E00D22C3F /* SecureBrowser */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB9A1C701D2E375F00D22C3F /* Build configuration list for PBXNativeTarget "SecureBrowser" */;
@@ -225,6 +279,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CB6CE67C1D30755D00FE1AD2 /* PBXTargetDependency */,
 			);
 			name = SecureBrowser;
 			productName = SecureBrowser;
@@ -276,6 +331,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Yury Ramanchuk";
 				TargetAttributes = {
+					CB6CE6671D30748200FE1AD2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					CB9A1C3F1D2E375E00D22C3F = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -305,6 +363,7 @@
 				CB9A1C3F1D2E375E00D22C3F /* SecureBrowser */,
 				CB9A1C5B1D2E375F00D22C3F /* SecureBrowserTests */,
 				CB9A1C661D2E375F00D22C3F /* SecureBrowserUITests */,
+				CB6CE6671D30748200FE1AD2 /* SecureLibrary */,
 			);
 		};
 /* End PBXProject section */
@@ -338,6 +397,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CB6CE6641D30748200FE1AD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6CE6751D3074BC00FE1AD2 /* CryptoLib.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB9A1C3C1D2E375E00D22C3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,6 +440,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CB6CE67C1D30755D00FE1AD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB6CE6671D30748200FE1AD2 /* SecureLibrary */;
+			targetProxy = CB6CE67B1D30755D00FE1AD2 /* PBXContainerItemProxy */;
+		};
 		CB9A1C5E1D2E375F00D22C3F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CB9A1C3F1D2E375E00D22C3F /* SecureBrowser */;
@@ -405,6 +477,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CB6CE6701D30748200FE1AD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		CB6CE6711D30748200FE1AD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
 		CB9A1C6E1D2E375F00D22C3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -570,6 +670,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CB6CE6721D30748200FE1AD2 /* Build configuration list for PBXNativeTarget "SecureLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6CE6701D30748200FE1AD2 /* Debug */,
+				CB6CE6711D30748200FE1AD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		CB9A1C3B1D2E375E00D22C3F /* Build configuration list for PBXProject "SecureBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
